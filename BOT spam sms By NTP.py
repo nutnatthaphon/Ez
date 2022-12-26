@@ -667,7 +667,7 @@ async def on_connect():
 async def on_ready():
     
  await bot.change_presence(
-        activity = discord.Streaming(name = "WUT ch ", url = "https://www.twitch.tv/jnbkung")
+        activity = discord.Streaming(name = "WUT ch ", url = "")#สเตตัสม่วงบอท
     )
   
 @bot.command()
@@ -704,3 +704,5 @@ async def sms(ctx, phone=None, amount=None):
         await ctx.message.delete()
 
 bot.run(TOKEN, reconnect=True)
+
+#CODE BY NTP-Xi server
